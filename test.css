@@ -27,7 +27,7 @@
   background-clip: padding-box;
   opacity: .3;
 
-  transition: background-position .2s ease-in-out;
+  transition: background-position .2s ease-out;
 }
 
 .btn:hover:after{
