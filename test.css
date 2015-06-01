@@ -1,0 +1,32 @@
+.btn {
+  background-color: rebeccapurple;
+  color: white;
+  width: 300px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  position: relative;}
+
+.btn:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  content: '';
+
+  box-shadow: inset 0 2px #fff;
+  background: -250px center no-repeat;
+  background-image: linear-gradient(45deg,rgba(255,255,255,0) 30%,#fff 30%,#fff 50%,rgba(255,255,255,0) 50%);
+  background-clip: padding-box;
+  opacity: .3;
+
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover:after{
+  background-position: 200px center;
+}
